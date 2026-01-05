@@ -1,66 +1,21 @@
-BlackRoad Proprietary License
+MIT License
 
-Copyright (c) 2024-2026 BlackRoad OS, Inc. All rights reserved.
+Copyright (c) 2024-2026 BlackRoad OS, Inc.
 
-NOTICE: This software and associated documentation files (the "Software") are
-proprietary and confidential to BlackRoad OS, Inc.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-TERMS AND CONDITIONS:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-1. OWNERSHIP
-   All rights, title, and interest in and to the Software, including all
-   intellectual property rights, are and shall remain the exclusive property
-   of BlackRoad OS, Inc.
-
-2. RESTRICTED USE
-   This Software is provided for evaluation and reference purposes only.
-   You may:
-   - View and study the source code for educational purposes
-   - Run the Software for personal, non-commercial evaluation
-   - Fork the repository for personal study
-
-   You may NOT:
-   - Use the Software for any commercial purpose without written permission
-   - Redistribute, sublicense, or sell copies of the Software
-   - Modify and distribute modified versions
-   - Remove or alter any proprietary notices
-   - Use the Software in any product or service offered to third parties
-   - Use the name "BlackRoad" or "BlackRoad OS" in derivative works
-
-3. NO WARRANTY
-   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-
-4. LIMITATION OF LIABILITY
-   IN NO EVENT SHALL BLACKROAD OS, INC. BE LIABLE FOR ANY CLAIM, DAMAGES OR
-   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-   OTHER DEALINGS IN THE SOFTWARE.
-
-5. COMMERCIAL LICENSING
-   For commercial use, enterprise licensing, or any other inquiries, contact:
-   blackroad.systems@gmail.com
-
-6. TERMINATION
-   This license is effective until terminated. Your rights under this license
-   will terminate automatically without notice if you fail to comply with any
-   term(s) of this license.
-
-7. GOVERNING LAW
-   This license shall be governed by and construed in accordance with the
-   laws of the United States of America.
-
-TRADEMARKS:
-"BlackRoad", "BlackRoad OS", "BlackRoad Quantum", and all associated logos
-are trademarks of BlackRoad OS, Inc. Unauthorized use is strictly prohibited.
-
-PATENTS PENDING:
-This Software may be covered by pending patent applications.
-
----
-
-For licensing inquiries: blackroad.systems@gmail.com
-For technical support: https://github.com/BlackRoad-OS/blackroad-os-quantum/issues
-
-© 2024-2026 BlackRoad OS, Inc. All rights reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
