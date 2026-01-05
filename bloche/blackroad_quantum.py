@@ -486,6 +486,12 @@ class BlackRoadQuantum:
         self.history.append(f"CX({c},{t})")
         return self
 
+    def Rz(self, q: int, theta: float) -> 'BlackRoadQuantum':
+        """Z-rotation gate"""
+        Gate.Rz(q, theta, self.state)
+        self.history.append(f"Rz({q},{theta:.4f})")
+        return self
+
     def measure(self, shots: int = 1000) -> np.ndarray:
         """Measure quantum state"""
         return self.state.measure(shots)
