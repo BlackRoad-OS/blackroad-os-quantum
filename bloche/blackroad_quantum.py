@@ -93,6 +93,8 @@ class QuantumState:
             self.normalize()
 
         probs = self.probability
+        # Ensure probabilities sum to exactly 1 (fix floating point errors)
+        probs = probs / np.sum(probs)
         return np.random.choice(self.dim, size=shots, p=probs)
 
     def entropy(self) -> float:
