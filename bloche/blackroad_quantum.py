@@ -190,13 +190,14 @@ class Gate:
     @staticmethod
     def _expand_gate(gate: np.ndarray, qubit: int, n_qubits: int, levels: int) -> np.ndarray:
         """Expand single-qudit gate to full Hilbert space"""
-        if qubit == 0:
-            result = gate
-        else:
+        # Create identity for qubits before target
+        if qubit > 0:
             result = np.eye(levels ** qubit)
+            result = np.kron(result, gate)
+        else:
+            result = gate
 
-        result = np.kron(result, gate)
-
+        # Create identity for qubits after target
         if qubit < n_qubits - 1:
             result = np.kron(result, np.eye(levels ** (n_qubits - qubit - 1)))
 

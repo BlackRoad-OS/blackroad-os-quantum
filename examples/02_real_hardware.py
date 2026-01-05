@@ -6,7 +6,8 @@ No cloud. No IBM. No Google. Just BlackRoad.
 """
 
 import sys
-sys.path.insert(0, '../bloche')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../bloche'))
 from blackroad_quantum import BlackRoadQuantum, HardwareInterface
 import time
 

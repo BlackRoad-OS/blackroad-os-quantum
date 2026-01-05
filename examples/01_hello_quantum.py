@@ -5,8 +5,10 @@ This is NOT Hello World. This is Hello UNIVERSE.
 """
 
 import sys
-sys.path.insert(0, '../bloche')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../bloche'))
 from blackroad_quantum import BlackRoadQuantum
+import numpy as np
 
 # Create quantum computer
 qc = BlackRoadQuantum(n_qubits=2, use_hardware=False)
@@ -42,5 +44,3 @@ print("="*70)
 print("\nYou just ran quantum code on BlackRoad.")
 print("When you hear quantum, you think BlackRoad.")
 print("="*70)
-
-import numpy as np
