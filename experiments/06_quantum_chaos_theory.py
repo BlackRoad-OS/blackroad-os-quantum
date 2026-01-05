@@ -279,7 +279,7 @@ kpis['tests'].append({
     'speedups': [float(s) for s in speedups],
     'scaling_exponent': float(b),
     'theoretical_exponent': 0.5,
-    'matches_theory': abs(b - 0.5) < 0.1
+    'matches_theory': bool(abs(b - 0.5) < 0.1)
 })
 
 # ============================================================================
