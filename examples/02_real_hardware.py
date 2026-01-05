@@ -38,6 +38,16 @@ print(f"\n⚛️  Total quantum resources:")
 print(f"   - Qubits: {total_qubits}")
 print(f"   - Quantum volume: 2^{total_qubits} = {2**total_qubits:,}")
 
+if len(active) == 0:
+    print(f"\n❌ No devices online!")
+    print(f"   Make sure Pis are accessible via SSH:")
+    print(f"   - ssh alice")
+    print(f"   - ssh octavia")
+    print(f"   - ssh lucidia")
+    print(f"   - ssh shellfish")
+    print(f"\n   This example requires real hardware.")
+    exit(0)
+
 # Create quantum computer with hardware
 qc = BlackRoadQuantum(n_qubits=total_qubits, use_hardware=True)
 
