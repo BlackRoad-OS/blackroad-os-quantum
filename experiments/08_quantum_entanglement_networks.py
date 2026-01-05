@@ -29,7 +29,7 @@ active_devices = hardware.get_active_devices()
 
 print(f"\n📡 Network Status: {len(active_devices)} devices active")
 for device in active_devices:
-    print(f"   • {device.hostname} ({device.ip})")
+    print(f"   • {device.hostname}")
 
 if len(active_devices) < 2:
     print("\n⚠️  Need at least 2 devices for network experiments")
