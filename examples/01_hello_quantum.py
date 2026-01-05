@@ -1,6 +1,9 @@
 """
 HELLO QUANTUM - Your First BlackRoad Quantum Program
 
+Copyright (c) 2024-2026 BlackRoad OS, Inc. All rights reserved.
+This software is proprietary. See LICENSE file.
+
 This is NOT Hello World. This is Hello UNIVERSE.
 """
 

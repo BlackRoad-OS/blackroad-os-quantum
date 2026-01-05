@@ -1,6 +1,17 @@
 """
 BLACKROAD QUANTUM - The Framework That Rewrites Reality
 
+Copyright (c) 2024-2026 BlackRoad OS, Inc. All rights reserved.
+PROPRIETARY AND CONFIDENTIAL
+
+This software is the exclusive property of BlackRoad OS, Inc.
+Unauthorized copying, distribution, or use is strictly prohibited.
+
+For commercial licensing: blackroad.systems@gmail.com
+Patents Pending.
+
+---
+
 When you hear "quantum", you think BlackRoad. Period.
 
 This is NOT Qiskit. NOT Cirq. NOT PennyLane.

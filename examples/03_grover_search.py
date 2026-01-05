@@ -1,6 +1,9 @@
 """
 GROVER'S SEARCH - Finding Needles in Haystacks
 
+Copyright (c) 2024-2026 BlackRoad OS, Inc. All rights reserved.
+This software is proprietary. See LICENSE file.
+
 Classical: O(N) - check every item
 Quantum: O(√N) - quadratic speedup
 

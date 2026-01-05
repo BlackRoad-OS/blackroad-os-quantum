@@ -343,9 +343,26 @@ This repository connects to:
 
 ## 📜 License
 
-MIT License - See LICENSE file
+**Proprietary License** - BlackRoad OS, Inc.
 
-Use it. Fork it. Build quantum computers.
+Copyright © 2024-2026 BlackRoad OS, Inc. All rights reserved.
+
+This software is proprietary and confidential. See [LICENSE](LICENSE) file for full terms.
+
+**For commercial licensing inquiries:** blackroad.systems@gmail.com
+
+### What You Can Do:
+- ✅ View and study the source code for educational purposes
+- ✅ Run the Software for personal, non-commercial evaluation
+- ✅ Fork for personal study
+
+### What You Cannot Do:
+- ❌ Commercial use without written permission
+- ❌ Redistribute or sell the Software
+- ❌ Use in products/services offered to third parties
+- ❌ Remove proprietary notices
+
+**Patents Pending** - This software may be covered by pending patent applications.
 
 ---
 

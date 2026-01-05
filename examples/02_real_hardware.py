@@ -1,6 +1,9 @@
 """
 REAL QUANTUM HARDWARE - Not A Simulation
 
+Copyright (c) 2024-2026 BlackRoad OS, Inc. All rights reserved.
+This software is proprietary. See LICENSE file.
+
 This runs on actual Raspberry Pi devices with real photons.
 No cloud. No IBM. No Google. Just BlackRoad.
 """
