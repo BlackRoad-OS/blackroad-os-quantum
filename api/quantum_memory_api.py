@@ -385,18 +385,26 @@ async def demo_searches():
 
 if __name__ == "__main__":
     import uvicorn
+    import argparse
+
+    parser = argparse.ArgumentParser(description='BlackRoad Quantum Memory API')
+    parser.add_argument('--port', type=int, default=8000, help='Port to run on (default: 8000)')
+    parser.add_argument('--host', type=str, default='0.0.0.0', help='Host to bind to (default: 0.0.0.0)')
+    args = parser.parse_args()
 
     print("⚛️ BLACKROAD QUANTUM MEMORY API")
     print("=" * 60)
     print("Starting server...")
+    print(f"Host: {args.host}")
+    print(f"Port: {args.port}")
     print(f"Database: {len(qm._load_memory_entries())} entries")
     print(f"Quantum: Enabled (Grover's algorithm)")
-    print(f"Docs: http://localhost:8000/docs")
+    print(f"Docs: http://localhost:{args.port}/docs")
     print("=" * 60)
 
     uvicorn.run(
         app,
-        host="0.0.0.0",
-        port=8000,
+        host=args.host,
+        port=args.port,
         log_level="info"
     )
