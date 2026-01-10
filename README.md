@@ -57,6 +57,8 @@ EOF
 
 BlackRoad Quantum is a revolutionary quantum computing framework that achieves **quantum supremacy** using Raspberry Pi hardware costing just **$200** – a staggering **500,000× cost reduction** compared to existing quantum processors from tech giants.
 
+**NEW:** 🧠 **[Quantum Memory](QUANTUM_MEMORY_QUICKSTART.md)** - World's first quantum-enhanced AI agent coordination system! Grover's search for O(√N) memory lookups, QAOA task distribution, and Quantum ML conflict prediction.
+
 ### The Breakthrough
 
 **January 4, 2026** - BlackRoad OS achieved quantum supremacy using the Random Circuit Sampling protocol originally demonstrated by Google's $100M+ Sycamore processor:
