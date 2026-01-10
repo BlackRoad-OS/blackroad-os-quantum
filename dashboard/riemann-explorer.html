@@ -271,17 +271,256 @@
             ctx.fillText('RH: UNPROVEN', width - 280, 115);
         }
 
-        function showZeros() { draw(); }
-        function showCriticalLine() { draw(); }
+        let animationMode = 'none';
+        let animationFrame = 0;
+
+        function showZeros() {
+            animationMode = 'none';
+            draw();
+        }
+
+        function showCriticalLine() {
+            animationMode = 'none';
+            draw();
+        }
+
         function showEulerProduct() {
-            // TODO: Visualize Euler product
-            alert('Euler Product visualization coming soon!');
+            animationMode = 'euler';
+            animateEulerProduct();
         }
+
         function animateZeros() {
-            alert('Zero animation coming soon!');
+            animationMode = 'zeros';
+            animateZeroFlow();
         }
+
         function showQuantumConnection() {
-            alert('Quantum chaos connection coming soon!');
+            animationMode = 'quantum';
+            animateQuantumChaos();
+        }
+
+        function animateEulerProduct() {
+            if (animationMode !== 'euler') return;
+
+            ctx.clearRect(0, 0, width, height);
+
+            // Background
+            const gradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, Math.max(width, height)/2);
+            gradient.addColorStop(0, 'rgba(156, 39, 176, 0.15)');
+            gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, width, height);
+
+            // Title
+            ctx.fillStyle = '#9C27B0';
+            ctx.font = 'bold 24px SF Pro Display';
+            ctx.fillText('ζ(s) = ∏ 1/(1-p⁻ˢ)', 30, 40);
+            ctx.font = '16px SF Pro Display';
+            ctx.fillStyle = '#F5A623';
+            ctx.fillText('Euler Product Formula', 30, 65);
+
+            // Animate product over primes
+            const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47];
+            const t = (animationFrame % 300) / 300;
+            const activePrimes = Math.floor(t * primes.length);
+
+            let yPos = 120;
+            for (let i = 0; i < activePrimes; i++) {
+                const p = primes[i];
+                const alpha = Math.min(1, (t * primes.length - i) * 2);
+
+                ctx.fillStyle = `rgba(0, 255, 136, ${alpha})`;
+                ctx.font = '18px Courier New';
+                ctx.fillText(`1/(1-${p}⁻ˢ)`, 50, yPos);
+
+                // Spiral visualization
+                const angle = i * Math.PI / 4;
+                const radius = 80 + i * 15;
+                const x = centerX + radius * Math.cos(angle);
+                const y = centerY + radius * Math.sin(angle);
+
+                ctx.beginPath();
+                ctx.arc(x, y, 8, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(156, 39, 176, ${alpha})`;
+                ctx.fill();
+
+                ctx.strokeStyle = `rgba(255, 29, 108, ${alpha * 0.5})`;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.lineTo(x, y);
+                ctx.stroke();
+
+                yPos += 35;
+                if (yPos > height - 100) {
+                    yPos = 120;
+                }
+            }
+
+            // Info
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+            ctx.fillRect(width - 320, height - 100, 300, 80);
+            ctx.strokeStyle = '#9C27B0';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(width - 320, height - 100, 300, 80);
+
+            ctx.fillStyle = '#00FF88';
+            ctx.font = '14px SF Pro Display';
+            ctx.fillText(`Product over ${activePrimes} primes`, width - 300, height - 70);
+            ctx.fillStyle = '#FFFFFF';
+            ctx.fillText('Connects primes to complex analysis!', width - 300, height - 45);
+
+            animationFrame++;
+            requestAnimationFrame(animateEulerProduct);
+        }
+
+        function animateZeroFlow() {
+            if (animationMode !== 'zeros') return;
+
+            ctx.clearRect(0, 0, width, height);
+
+            // Background
+            const gradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, Math.max(width, height)/2);
+            gradient.addColorStop(0, 'rgba(255, 29, 108, 0.15)');
+            gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, width, height);
+
+            // Flowing zeros
+            const t = (animationFrame % 400) / 400;
+            const criticalX = width / 3;
+
+            knownZeros.forEach((zero, i) => {
+                const baseY = 100 + i * (height - 200) / knownZeros.length;
+                const offset = Math.sin(t * Math.PI * 2 + i * 0.5) * 30;
+                const y = baseY + offset;
+
+                // Trail
+                for (let j = 0; j < 5; j++) {
+                    const trailY = y - j * 15;
+                    const alpha = (5 - j) / 5 * 0.3;
+
+                    ctx.fillStyle = `rgba(0, 255, 136, ${alpha})`;
+                    ctx.beginPath();
+                    ctx.arc(criticalX, trailY, 6 - j, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+
+                // Main zero
+                const glow = ctx.createRadialGradient(criticalX, y, 0, criticalX, y, 40);
+                glow.addColorStop(0, 'rgba(0, 255, 136, 0.9)');
+                glow.addColorStop(1, 'rgba(0, 255, 136, 0)');
+                ctx.fillStyle = glow;
+                ctx.beginPath();
+                ctx.arc(criticalX, y, 40, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.fillStyle = '#00FF88';
+                ctx.beginPath();
+                ctx.arc(criticalX, y, 10, 0, Math.PI * 2);
+                ctx.fill();
+            });
+
+            // Critical line
+            ctx.strokeStyle = 'rgba(255, 29, 108, 0.7)';
+            ctx.lineWidth = 4;
+            ctx.setLineDash([10, 10]);
+            ctx.beginPath();
+            ctx.moveTo(criticalX, 0);
+            ctx.lineTo(criticalX, height);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            animationFrame++;
+            requestAnimationFrame(animateZeroFlow);
+        }
+
+        function animateQuantumChaos() {
+            if (animationMode !== 'quantum') return;
+
+            ctx.clearRect(0, 0, width, height);
+
+            // Background
+            const gradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, Math.max(width, height)/2);
+            gradient.addColorStop(0, 'rgba(41, 121, 255, 0.15)');
+            gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, width, height);
+
+            const t = (animationFrame % 360) / 360;
+
+            // Random matrix eigenvalues (GUE statistics)
+            const numEigenvalues = 30;
+            for (let i = 0; i < numEigenvalues; i++) {
+                const angle = i * Math.PI * 2 / numEigenvalues + t * Math.PI * 2;
+                const radius = 150 + Math.sin(t * Math.PI * 4 + i) * 50;
+                const x = centerX + radius * Math.cos(angle);
+                const y = centerY + radius * Math.sin(angle);
+
+                // Energy level
+                const glow = ctx.createRadialGradient(x, y, 0, x, y, 25);
+                glow.addColorStop(0, 'rgba(41, 121, 255, 0.8)');
+                glow.addColorStop(1, 'rgba(41, 121, 255, 0)');
+                ctx.fillStyle = glow;
+                ctx.beginPath();
+                ctx.arc(x, y, 25, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.fillStyle = '#2979FF';
+                ctx.beginPath();
+                ctx.arc(x, y, 6, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // Central Hermitian operator symbol
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, 80, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.strokeStyle = '#FF1D6C';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, 80, 0, Math.PI * 2);
+            ctx.stroke();
+
+            ctx.fillStyle = '#00FF88';
+            ctx.font = 'bold 36px SF Pro Display';
+            ctx.textAlign = 'center';
+            ctx.fillText('Ĥ', centerX, centerY + 12);
+
+            // Title
+            ctx.textAlign = 'left';
+            ctx.fillStyle = '#2979FF';
+            ctx.font = 'bold 24px SF Pro Display';
+            ctx.fillText('Quantum Chaos Connection', 30, 40);
+
+            ctx.font = '16px SF Pro Display';
+            ctx.fillStyle = '#F5A623';
+            ctx.fillText('Riemann zeros = Hermitian eigenvalues?', 30, 65);
+
+            // Info box
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+            ctx.fillRect(width - 350, height - 140, 330, 120);
+            ctx.strokeStyle = '#2979FF';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(width - 350, height - 140, 330, 120);
+
+            ctx.fillStyle = '#2979FF';
+            ctx.font = 'bold 16px SF Pro Display';
+            ctx.fillText('Hilbert-Pólya Conjecture', width - 330, height - 110);
+
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = '13px SF Pro Display';
+            ctx.fillText('RH zeros might be eigenvalues', width - 330, height - 85);
+            ctx.fillText('of a quantum Hamiltonian!', width - 330, height - 65);
+
+            ctx.fillStyle = '#00FF88';
+            ctx.font = 'bold 14px SF Pro Display';
+            ctx.fillText('GUE statistics match perfectly', width - 330, height - 35);
+
+            animationFrame++;
+            requestAnimationFrame(animateQuantumChaos);
         }
 
         window.addEventListener('resize', resizeCanvas);
