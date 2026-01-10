@@ -266,11 +266,11 @@
 
         <div class="stats">
             <div class="stat">
-                <div class="stat-value">10</div>
+                <div class="stat-value">11</div>
                 <div class="stat-label">Interactive Systems</div>
             </div>
             <div class="stat">
-                <div class="stat-value">55+</div>
+                <div class="stat-value">60+</div>
                 <div class="stat-label">Concepts Visualized</div>
             </div>
             <div class="stat">
@@ -501,17 +501,50 @@
                     <span class="card-tag card-new">NEW</span>
                 </div>
             </div>
+
+            <!-- Quantum Circuit Builder -->
+            <div class="card" onclick="window.location.href='circuit-builder.html'">
+                <div class="card-icon">🧮⚛️</div>
+                <div class="card-title">Quantum Circuit Builder</div>
+                <div class="card-description">
+                    Build your own quantum algorithms! Click to place gates (X, Y, Z, H, S, T, CNOT, SWAP),
+                    watch state vectors evolve in real-time, see Bloch sphere updates, and export to QASM for real hardware!
+                </div>
+                <div class="card-features">
+                    ✓ Drag & drop gates (8 single + 3 multi-qubit)<br>
+                    ✓ Live state vector & probability visualization<br>
+                    ✓ Preset circuits (Bell, GHZ, Teleportation)<br>
+                    ✓ Export to OpenQASM 2.0!
+                </div>
+                <div style="margin-top: 21px;">
+                    <span class="card-tag">Interactive</span>
+                    <span class="card-tag">Build Circuits</span>
+                    <span class="card-tag card-new">NEW</span>
+                </div>
+            </div>
         </div>
 
         <div class="section-title" style="margin-top: 89px;">🎯 Coming Soon</div>
 
         <div class="grid">
             <div class="card" style="opacity: 0.6; cursor: not-allowed;">
-                <div class="card-icon">🧮</div>
-                <div class="card-title">Quantum Circuit Builder</div>
+                <div class="card-icon">🔬</div>
+                <div class="card-title">Quantum Error Correction</div>
                 <div class="card-description">
-                    Build your own quantum circuits! Drag & drop gates, see state evolution, measure results.
-                    Design algorithms visually and export to QASM!
+                    See how quantum computers fight decoherence! Explore surface codes, bit-flip & phase-flip correction,
+                    and why we need 1000 physical qubits per logical qubit.
+                </div>
+                <div style="margin-top: 21px;">
+                    <span class="card-tag">Coming Soon</span>
+                </div>
+            </div>
+
+            <div class="card" style="opacity: 0.6; cursor: not-allowed;">
+                <div class="card-icon">🎯</div>
+                <div class="card-title">VQE & QAOA</div>
+                <div class="card-description">
+                    Variational Quantum Eigensolver and Quantum Approximate Optimization Algorithm. See how
+                    near-term quantum computers solve real optimization problems!
                 </div>
                 <div style="margin-top: 21px;">
                     <span class="card-tag">Coming Soon</span>
