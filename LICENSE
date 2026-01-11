@@ -1,264 +1,35 @@
-PROPRIETARY LICENSE
+BLACKROAD OS PROPRIETARY LICENSE
 
-Copyright (c) 2024-2026 BlackRoad OS, Inc.
-All Rights Reserved.
+Copyright (c) 2026 BlackRoad OS, Inc. All rights reserved.
 
-CEO: Alexa Amundson
-Organization: BlackRoad OS, Inc.
-Project: BlackRoad Quantum - Mathematical Universe Explorer
+TERMS AND CONDITIONS
 
-PROPRIETARY AND CONFIDENTIAL
+1. PROPRIETARY SOFTWARE
+   This software and associated documentation files (the "Software") are the
+   proprietary property of BlackRoad OS, Inc. The Software is protected by
+   copyright laws and international treaty provisions.
 
-This software and associated documentation files (the "Software") are the
-exclusive proprietary and confidential property of BlackRoad OS, Inc. and are
-protected by copyright law and international treaties.
+2. RESTRICTIONS
+   You may NOT:
+   - Copy, modify, or distribute the Software
+   - Reverse engineer, decompile, or disassemble the Software
+   - Rent, lease, or lend the Software
+   - Use the Software for commercial purposes without authorization
+   - Remove or alter any proprietary notices
 
-================================================================================
-GRANT OF LICENSE
-================================================================================
+3. PERMITTED USE
+   This Software is made publicly visible for:
+   - Demonstration and evaluation purposes
+   - Educational reference
+   - Authorized testing and development
 
-Subject to the terms of this license, BlackRoad OS, Inc. grants you a limited,
-non-exclusive, non-transferable, revocable license to:
+4. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED. IN NO EVENT SHALL BLACKROAD OS, INC. BE LIABLE FOR ANY CLAIM,
+   DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
 
-✓ View and study the source code for educational and reference purposes
-✓ Use the Software for personal, non-commercial testing and evaluation only
-✓ Fork the repository for personal experimentation and learning
-✓ Share links to the public repository for educational purposes
+5. CONTACT
+   For licensing inquiries: blackroad.systems@gmail.com
+   Website: https://blackroad.io
 
-This license DOES NOT grant you the right to:
-✗ Use the Software for any commercial purpose
-✗ Redistribute, resell, or sublicense the Software in any form
-✗ Create derivative works for public or commercial distribution
-✗ Remove, alter, or obscure any proprietary notices or branding
-✗ Use BlackRoad trademarks, logos, or branding without written permission
-✗ Deploy the Software to production environments without written permission
-✗ Use the Software to compete with BlackRoad OS, Inc.
-
-================================================================================
-RESTRICTIONS
-================================================================================
-
-You may NOT:
-
-1. COMMERCIAL USE
-   - Use the Software in any commercial product, service, or offering
-   - Monetize the Software or any derivative works
-   - Sell access to the Software or its features
-   - Use the Software in any revenue-generating activity
-
-2. REDISTRIBUTION
-   - Redistribute the Software in source or binary form
-   - Package the Software for distribution on any platform
-   - Include the Software in any software distribution or bundle
-   - Host the Software on any public server without permission
-
-3. DERIVATIVE WORKS
-   - Create derivative works for commercial distribution
-   - Modify and redistribute modified versions
-   - Combine the Software with other software for distribution
-   - Use the Software as a basis for competing products
-
-4. BRANDING & INTELLECTUAL PROPERTY
-   - Remove or modify copyright notices, licenses, or attributions
-   - Use "BlackRoad," "BlackRoad OS," or related marks without permission
-   - Claim ownership of the Software or its components
-   - Reverse engineer (except where prohibited by law)
-
-5. PRODUCTION DEPLOYMENT
-   - Deploy the Software to production environments without written permission
-   - Use the Software to serve customers or end users commercially
-   - Integrate the Software into commercial applications
-
-================================================================================
-PUBLIC VISIBILITY
-================================================================================
-
-This repository is made publicly visible for:
-- Transparency and open collaboration
-- Educational purposes and learning
-- Community engagement and feedback
-- Portfolio and demonstration purposes
-
-PUBLIC VISIBILITY DOES NOT CONSTITUTE OPEN SOURCE LICENSING.
-
-This is NOT an open source license. All rights remain with BlackRoad OS, Inc.
-You may view the code, but significant restrictions apply to its use.
-
-================================================================================
-PROPRIETARY CONTENT
-================================================================================
-
-The following are the exclusive proprietary property of BlackRoad OS, Inc.:
-
-QUANTUM VISUALIZATIONS (15 Interactive Systems):
-1. Quantum States Explorer - Interactive quantum state visualization
-2. Superposition Deep Dive - Superposition and probability visualization
-3. Bloch Sphere Interactive - 3D quantum state sphere
-4. Quantum Gates Library - Complete quantum gate reference
-5. Quantum Measurement - Measurement and collapse simulation
-6. Bell Inequality Test - CHSH inequality demonstration
-7. Quantum Teleportation - Interactive teleportation protocol
-8. Entanglement Visualizer - EPR correlations and Bell states
-9. Quantum Algorithms - Grover, Deutsch-Jozsa, Bernstein-Vazirani, Simon
-10. Shor's Algorithm & QFT - RSA threat and quantum fourier transform
-11. Quantum Circuit Builder - Interactive circuit design and QASM export
-12. Quantum Error Correction - Decoherence, bit-flip, surface codes
-13. Quantum Games - Playful quantum mechanics learning
-14. VQE & QAOA - NISQ algorithms for chemistry and optimization
-15. Quantum Music - Audio sonification of quantum phenomena
-
-DESIGN SYSTEM:
-- BlackRoad color palette (Amber, Hot Pink, Electric Blue, Violet)
-- Golden Ratio spacing system (89, 55, 34, 21, 13, 8, 5 pixels)
-- Typography and visual design
-- Brand identity and aesthetic
-
-EDUCATIONAL CONTENT:
-- All explanations, descriptions, and documentation
-- Mathematical equations and formulas
-- Interactive examples and demonstrations
-- Tutorial content and guides
-
-TECHNICAL IMPLEMENTATIONS:
-- Visualization algorithms and code
-- Canvas rendering implementations
-- Audio synthesis algorithms (Web Audio API)
-- Circuit simulation engines
-- State vector calculations
-- Animation systems
-- Interactive controls
-
-Total: ~15,000+ lines of proprietary code, 80+ quantum concepts visualized
-
-================================================================================
-TESTING ONLY
-================================================================================
-
-This Software is provided purely for:
-- Testing and evaluation purposes
-- Educational learning and study
-- Personal experimentation
-- Non-commercial research
-
-It is NOT licensed for:
-- Commercial use or resale
-- Production deployments
-- Revenue-generating activities
-- Enterprise or business use without permission
-
-================================================================================
-CONTRIBUTIONS
-================================================================================
-
-Any contributions, pull requests, suggestions, or feedback submitted to this
-repository automatically become the property of BlackRoad OS, Inc. and are
-subject to this license.
-
-By contributing, you:
-- Assign all rights to BlackRoad OS, Inc.
-- Agree your contributions are subject to this proprietary license
-- Waive any claims to ownership of contributed content
-
-================================================================================
-CONFIDENTIALITY
-================================================================================
-
-The Software contains proprietary algorithms, visualizations, educational
-content, and implementations developed by BlackRoad OS, Inc. You acknowledge
-and agree to:
-
-- Maintain the confidential nature of proprietary information
-- Not disclose proprietary methods or implementations
-- Respect the intellectual property rights of BlackRoad OS, Inc.
-
-================================================================================
-NO WARRANTY
-================================================================================
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT.
-
-IN NO EVENT SHALL BLACKROAD OS, INC. OR ITS OFFICERS, DIRECTORS, EMPLOYEES,
-OR AGENTS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN
-AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-================================================================================
-LIMITATION OF LIABILITY
-================================================================================
-
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL BLACKROAD OS, INC.
-BE LIABLE FOR:
-
-- Any direct, indirect, incidental, special, or consequential damages
-- Loss of profits, revenue, data, or business opportunities
-- Cost of substitute goods or services
-- Any damages whatsoever arising out of the use or inability to use the Software
-
-================================================================================
-TERMINATION
-================================================================================
-
-This license is effective until terminated. Your rights under this license
-will terminate automatically without notice if you fail to comply with any
-term or condition.
-
-Upon termination, you must:
-- Immediately cease all use of the Software
-- Destroy all copies of the Software in your possession
-- Remove any forks or derivatives from public repositories
-
-BlackRoad OS, Inc. reserves the right to terminate this license at any time
-for any reason or no reason.
-
-================================================================================
-GOVERNING LAW
-================================================================================
-
-This license shall be governed by and construed in accordance with the laws
-of the United States, without regard to its conflict of law provisions.
-
-Any disputes arising from this license shall be resolved in the courts having
-jurisdiction over BlackRoad OS, Inc.'s principal place of business.
-
-================================================================================
-ENTIRE AGREEMENT
-================================================================================
-
-This license constitutes the entire agreement between you and BlackRoad OS, Inc.
-regarding the Software and supersedes all prior or contemporaneous agreements,
-representations, warranties, and understandings.
-
-================================================================================
-CONTACT INFORMATION
-================================================================================
-
-For licensing inquiries, commercial use permissions, or questions:
-
-Company: BlackRoad OS, Inc.
-CEO: Alexa Amundson
-Email: blackroad.systems@gmail.com
-Alternative: amundsonalexa@gmail.com
-
-Commercial Licensing: Available upon request
-Enterprise Licensing: Contact for pricing and terms
-Educational Institution Licensing: Contact for special arrangements
-
-================================================================================
-ACKNOWLEDGMENT
-================================================================================
-
-BY ACCESSING, VIEWING, FORKING, CLONING, OR USING THIS SOFTWARE IN ANY WAY,
-YOU ACKNOWLEDGE THAT YOU HAVE READ THIS LICENSE, UNDERSTAND IT, AND AGREE TO
-BE BOUND BY ITS TERMS AND CONDITIONS.
-
-IF YOU DO NOT AGREE TO THESE TERMS, DO NOT ACCESS, VIEW, OR USE THE SOFTWARE.
-
-================================================================================
-
-Last Updated: 2026-01-10
-
-All Rights Reserved © 2024-2026 BlackRoad OS, Inc.
-
-🖤🛣️⚛️∞
+BlackRoad OS, Inc.
